@@ -1,0 +1,15 @@
+{
+  "name": "bodyparser",
+  "version": "1.0.0",
+  "description": "understand bodyParser in express app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jhonny111s",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0"
+  }
+}
