@@ -1,6 +1,6 @@
 
 // https://expressjs.com/es/starter/installing.html
-// forma mas basica de generar un proyecto de express sin usar un generador para crear toda una estructura
+// forma mas básica de generar un proyecto de express sin usar un generador para crear toda una estructura
 var express = require('express');
 var app = express();
 

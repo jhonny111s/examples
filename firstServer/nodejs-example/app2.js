@@ -5,16 +5,21 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
   /** Route handle */
+
+  // agregamos una propiedad nueva al request llamada routes
+  // aquí deberían estar todos los posible métodos http
   req.routes = {
     get: {},
     post: {},
     put: {}
   };
 
+  // Agregamos unos métodos nuevos al request los cuales reciben
+  // la url y una función, que estarán populando las rutas.
+  // ej. get: {"/": function(req, res)}
   req.get = function(path, callback) {
     req.routes.get[path] = callback;
   };
-
   req.post = function(path, callback) {
     req.routes.post[path] = callback;
   };
@@ -23,7 +28,7 @@ const server = http.createServer((req, res) => {
 
 
   /** Routes initialization */
-
+  
   req.get("/hola", function(req, res) {
     res.statusCode = 200;
     res.end("Hola mundo");

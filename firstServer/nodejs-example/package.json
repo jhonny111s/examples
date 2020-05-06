@@ -1,14 +1,12 @@
 {
-  "name": "fastify",
+  "name": "nodejs-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jhonny111s",
-  "license": "ISC",
-  "dependencies": {
-    "restify": "^8.5.1"
-  }
+  "license": "MIT"
 }
