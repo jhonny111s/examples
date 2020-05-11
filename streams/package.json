@@ -1,0 +1,15 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello-world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jhonny111s",
+  "license": "ISC",
+  "dependencies": {
+    "concat-stream": "^2.0.0",
+    "through2": "^3.0.1"
+  }
+}
