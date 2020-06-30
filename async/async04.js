@@ -1,4 +1,4 @@
-const suma = function(total, numero){
+const suma = function (total, numero) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(total + numero)
@@ -6,7 +6,7 @@ const suma = function(total, numero){
     });
 }
 
-const resta = function(total, numero){
+const resta = function (total, numero) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(total - numero)
@@ -14,7 +14,7 @@ const resta = function(total, numero){
     });
 }
 
-const multi = function(total, numero){
+const multi = function (total, numero) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(total * numero)
@@ -28,12 +28,16 @@ async function callAsync() {
         const resSuma = await suma(total, 2);
         const resResta = await resta(resSuma, 5);
         const resMulti = await multi(resResta, 2);
-        console.log(resMulti);
+        return resMulti;
     } catch (error) {
-        console.log(error);
+        return error;
     }
 
 
 }
 
-callAsync();
+callAsync().then(success => {
+    console.log(success);
+}).catch(error => {
+    console.log(error);
+});

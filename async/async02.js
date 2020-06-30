@@ -16,12 +16,15 @@ function leerArchivo(path) {
 async function callAsync() {
     try {
         const number = await leerArchivo('mi_archivo');
-        console.log(`Tenemos una respuesta exitosa ${number} par`);
+        return `Tenemos una respuesta exitosa ${number} par`;
     } catch (error) {
-        console.log(`Se genero un error porque ${error} es impar`);
+        return `Se genero un error porque ${error} es impar`;
     }
-
 
 }
 
-callAsync();
+callAsync().then(success => {
+    console.log(success);
+}).catch(error => {
+    console.log(error);
+});
