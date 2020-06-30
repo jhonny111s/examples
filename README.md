@@ -6,7 +6,11 @@ Introducción a NodeJs.
 
 ## [require](https://jhonny111s.github.io/code-of-toth/nodejs/course/2020/05/14/module.html)
 
-Se crean tres ejemplos donde aprendemos a crear un modulo y exportarlo para usarlo en otro archivo por medio de require y entender como require resuelve los módulos y sus dependencias
+Se crean tres ejemplos donde aprendemos a crear un modulo y exportarlo para usarlo en otro archivo por medio de require y entender como require resuelve los módulos y sus dependencias.
+
+## [Callback vs promise vs async/await](https://jhonny111s.github.io/code-of-toth/nodejs/course/2020/06/24/async.html)
+
+Se crean varios ejemplos escritos como callbacks, promises y async/await para comparar las diferencias entre los tres conceptos.
 
 ## [event emitter](https://jhonny111s.github.io/code-of-toth/nodejs/course/2020/05/09/event-emitter.html)
 
