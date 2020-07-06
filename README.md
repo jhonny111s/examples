@@ -12,6 +12,14 @@ Se crean tres ejemplos donde aprendemos a crear un modulo y exportarlo para usar
 
 Se crean varios ejemplos escritos como callbacks, promises y async/await para comparar las diferencias entre los tres conceptos.
 
+## [Module - require](https://jhonny111s.github.io/code-of-toth/nodejs/course/2020/06/24/module.html)
+
+Ejemplos donde se muestra las maneras de llamar un modulo o paquete
+
+## [Core basics](https://jhonny111s.github.io/code-of-toth/nodejs/course/2020/06/24/core-basic.html)
+
+Se crearon algunos ejemplos de los módulos básicos en nodejs, como introducción a los módulos.
+
 ## [event emitter](https://jhonny111s.github.io/code-of-toth/nodejs/course/2020/05/09/event-emitter.html)
 
 Se crean tres ejemplos, en el primero se crea un evento custom, otro donde usamos uno existente en el filesystem y finalmente usamos un evento en un método de login.
