@@ -10,6 +10,6 @@
   "author": "jhonny111s",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^2.14.0"
+    "fastify": "^2.15.1"
   }
 }
