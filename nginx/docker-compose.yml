@@ -1,0 +1,38 @@
+version: '3.7'
+services:
+  project1:
+    build:
+      context: ./project1
+    container_name: project1
+    ports:
+      - "3001:3001"
+    networks:
+      - app-network
+  
+  project2:
+    build:
+        context: ./project2
+    container_name: project2
+    ports:
+      - "3002:3002"
+    networks:
+      - app-network
+
+  webserver:
+    image: nginx
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-conf:/etc/nginx/conf.d
+    depends_on:
+      - project1
+      - project2
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+  
