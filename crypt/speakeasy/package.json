@@ -1,0 +1,22 @@
+{
+  "name": "speakeasy",
+  "version": "1.0.0",
+  "description": "topt",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "qrcode": "^1.4.4",
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently  \"http-server client --proxy http://localhost:8080\" \"node server/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jhonny111s",
+  "license": "ISC"
+}

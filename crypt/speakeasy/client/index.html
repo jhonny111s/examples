@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <h1>TOTP</h1>
+    <p>The Time-based One-time Password algorithm (TOTP) is an extension of the HMAC-based
+       One-time Password algorithm (HOTP) that generates a one-time password (OTP) by 
+       instead taking uniqueness from the current time.
+    </p>
+      <div>
+        <p>
+          <button onClick='login()'>1. login</button>
+        </p>
+        <textarea id="user" name="user" rows="10" cols="30"></textarea>
+        <p><label id="error"></label></p>
+      </div>
+
+      <div>
+        <img id="qr">
+        <p>
+          <button onClick='getQr()'>2. Get QR</button>
+        </p>
+        
+      </div>
+    
+      <div>
+        <label id="verifyRes"></label>
+        <input id="verify" type="text">
+        <button onClick='verify()'>3. Verify</button>
+      </div>
+    
+    <script src="bundle.js"></script> 
+  </body>
+</html>
