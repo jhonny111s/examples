@@ -2,7 +2,7 @@ const net = require('net');
 const process = require('process');
 
 // connection to server
-var client = net.connect({port: 8080}, function(c) {
+const client = net.connect({port: 8080}, function() {
    console.log('client connected to server');
 });
 

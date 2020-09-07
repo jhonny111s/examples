@@ -1,8 +1,7 @@
 const io = require('socket.io')();
 
 io.on('connection', client => {
-  console.log(client);
-  const clientId =  client.conn.id;
+  const clientId = client.id;
   client.emit("messageClient", "Welcome");
 
   client.on('messageServer', data => {
@@ -14,12 +13,9 @@ io.on('connection', client => {
     else {
       console.log(`client${clientId}: ${message}`);
     }
-    
-  })
- });
 
-io.on('event', (data) => {
-  console.log(`Generic event: ${data}`);
+  });
 });
+
 
 io.listen(8080);

@@ -2,7 +2,7 @@ let clients = [];
 const net = require('net');
 
 
-var server = net.createServer(function (connection) {
+const server = net.createServer(function (connection) {
     console.log('Some one connected to server');
     // saved current socket connection
     clients.push(connection);
@@ -33,7 +33,6 @@ var server = net.createServer(function (connection) {
     connection.on('end', function () {
         // removed client disconected
         const index = clients.indexOf(connection);
-        console.log('index: '+index);
         clients.splice(index, 1);
         console.log('client disconected', clients.length);
     });
@@ -45,7 +44,6 @@ var server = net.createServer(function (connection) {
     // Handle errors here.
     throw err;
 });
-
 
 server.listen(8080, function () {
     console.log('server is listening');
