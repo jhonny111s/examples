@@ -2,8 +2,12 @@
 function fetchData (callback) {
     setTimeout(() => {
         // function(error, data)
-        callback(null, 2);
-    }, 1000);
+        let num = 0;
+        for(let index = 0; index < 1e9; index++) { 
+            num += index;
+        }
+        callback(null, num);
+    }, 0);
 }
 
 function processData () {
@@ -13,6 +17,13 @@ function processData () {
     });
     
     console.log("Another function");
+
+    let k = 0;
+    for(let index = 0; index < 1e9; index++) { 
+        k+= index;
+    }
+
+    console.log("2:"+k);
 }
 
 processData()
